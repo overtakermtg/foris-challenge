@@ -7,6 +7,7 @@ for fin in range(0,len(text)):
 	for ini in range(0,len(text)):
 		# guarda la palabra generada para luego evaluarla
 		word = text[ini:fin]
+		# word[::-1] es para invertir la palabra
 		if word == word[::-1] and len(word) > 3:
 			# solo imprime los palindromos 
 			print(word)
